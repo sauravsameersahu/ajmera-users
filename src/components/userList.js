@@ -100,19 +100,19 @@ const UserList = () => {
 
     return (
         <>
-            <div style={{ background: "black", color: "white", height: "100vh" }}>
+            {/* <div style={{ background: "black", color: "white", height: "100vh" }}> */}
                 {isLoading &&
                     <LinearProgress />
                 }
                 {
                     isAddUser ?
                         <>
-                            {/* <div style={{
+                            <div style={{
                                 position: "absolute",
                                 top: "50%",
                                 left: "50%",
                                 transform: "translate(-50%,-50%)"
-                            }} > */}
+                            }} >
                                 < Card variant="outlined" >
                                     <CardContent>
                                         <Typography align="center" sx={{ fontSize: 22 }} color="text.secondary" gutterBottom>
@@ -138,7 +138,7 @@ const UserList = () => {
                                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "100%" }}>
                                     <Button color="info" variant="contained" onClick={() => { setIsAddUser(false) }}>LOAD USER LIST</Button> &nbsp;
                                 </div>
-                            {/* </div > */}
+                            </div >
                         </>
                         :
                         <>
@@ -165,7 +165,7 @@ const UserList = () => {
                             </div>
                         </>
                 }
-            </div>
+            {/* </div> */}
         </>
     )
 }
