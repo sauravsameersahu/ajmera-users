@@ -118,13 +118,13 @@ const UserList = () => {
                                         <Typography align="center" sx={{ fontSize: 22 }} color="text.secondary" gutterBottom>
                                             Add User Details
                                         </Typography>
-                                        <TextField size="small" id="outlined-basic" label="First Name" variant="outlined" name="first_name" required onChange={inputHandler} />
+                                        <TextField size="small" id="outlined-basic" label="First Name" variant="outlined" name="first_name" value={formData.first_name} required onChange={inputHandler} />
                                         <br />
                                         <br />
-                                        <TextField size="small" id="outlined-basic" label="Last Name" variant="outlined" name="last_name" required onChange={inputHandler} />
+                                        <TextField size="small" id="outlined-basic" label="Last Name" variant="outlined" name="last_name" value={formData.last_name} required onChange={inputHandler} />
                                         <br />
                                         <br />
-                                        <TextField size="small" id="outlined-basic" label="Email" variant="outlined" name="email" required onChange={inputHandler} />
+                                        <TextField size="small" id="outlined-basic" label="Email" variant="outlined" name="email" value={formData.email} required onChange={inputHandler} />
                                         <br />
                                     </CardContent>
                                     <CardActions>
